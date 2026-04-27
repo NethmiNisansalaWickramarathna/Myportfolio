@@ -28,7 +28,7 @@ Open the project directory in your code editor (e.g., VS Code).
 Right-click on index.html and select Open with Live Server to view the website in your browser.
 
 📫 Connect with Me
-Live Website: [Insert your GitHub Pages link here]
+Live Website: [Insert your GitHub Pages link here
 
 LinkedIn: www.linkedin.com/in/n-wickramarathna2004
 
