@@ -1,0 +1,188 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body { 
+    background-color: #f0f4f8; 
+    color: #334155; 
+    line-height: 1.6; 
+    /* අලුතින් එකතු කරන කොටස - මේකෙන් සුදු ඉඩ නැති කරනවා */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Menu */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: #0f172a; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+nav .logo { font-size: 1.5rem; font-weight: bold; color: #38bdf8; }
+nav ul { display: flex; list-style: none; flex-wrap: wrap; }
+nav ul li { margin-left: 15px; }
+nav ul li a { color: #cbd5e1; text-decoration: none; font-weight: 500; transition: 0.3s; padding: 5px 10px; border-radius: 5px; font-size: 0.95rem; }
+nav ul li a:hover, nav ul li a.active { background: #38bdf8; color: #0f172a; }
+
+/* Headers and Sections */
+.page-header { background: #1e293b; padding: 60px 20px; text-align: center; color: white; margin-bottom: 40px; border-bottom: 4px solid #38bdf8; }
+.page-header h1 { font-size: 2.5rem; color: #38bdf8; margin-bottom: 10px; }
+section { padding: 40px 10%; max-width: 1400px; margin: 0 auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+
+/* Cards (Projects, Games, Blogs) */
+.card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; border-top: 4px solid #0284c7; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+.card video, .card img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #e2e8f0; }
+.card-content { padding: 25px; }
+.card-content h3 { color: #0f172a; margin-bottom: 10px; }
+
+/* Image Gallery */
+.ss-gallery { display: flex; gap: 10px; margin: 15px 0; overflow-x: auto; padding-bottom: 10px; }
+.ss-gallery img { height: 120px; width: auto; border-radius: 8px; border: 1px solid #e2e8f0; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 10px 20px; background: #0284c7; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: 0.3s; margin-top: 15px; margin-right: 10px; }
+.btn:hover { opacity: 0.9; }
+.btn-alt { background: #475569; }
+.btn-whatsapp { background: #25D366; }
+.btn-youtube { background: #ff0000; }
+.btn-itch { background: #fa5c5c; }
+
+/* Contact and CV */
+.contact-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    text-align: center; 
+    align-items: start;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.contact-item { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-bottom: 4px solid #38bdf8; }
+.cv-container { width: 100%; height: 70vh; border: 2px solid #cbd5e1; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-top: 20px; }
+
+/* --- New Professional Footer --- */
+footer {
+    background: #080d1a;
+    color: #94a3b8;
+    padding: 60px 10% 20px 10%;
+    margin-top: auto; /* මේකෙන් Footer එක යටටම තල්ලු කරනවා */
+    font-size: 0.95rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #38bdf8;
+    margin-bottom: 15px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.footer-logo span {
+    color: #ffffff;
+}
+
+.footer-col p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-socials a {
+    color: #94a3b8;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-socials a:hover {
+    color: #38bdf8;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #38bdf8;
+    padding-left: 5px; /* Mouse එක ගෙනිච්චම පොඩ්ඩක් ඉස්සරහට එන ලස්සන effect එකක් */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #1e293b;
+    font-size: 0.85rem;
+}
+
+/* --- AI Chatbot Styles --- */
+.chat-btn { position: fixed; bottom: 30px; right: 30px; background: #38bdf8; color: #0f172a; border: none; padding: 15px 25px; border-radius: 50px; font-size: 1.1rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1001; transition: 0.3s; }
+.chat-btn:hover { transform: scale(1.05); background: #0284c7; color: white; }
+
+.chat-popup { display: none; position: fixed; bottom: 90px; right: 30px; width: 320px; background: white; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); z-index: 1001; overflow: hidden; flex-direction: column; border: 1px solid #e2e8f0; }
+.chat-header { background: #0f172a; color: white; padding: 15px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
+.chat-header button { background: transparent; border: none; color: white; cursor: pointer; font-size: 1.2rem; }
+
+.chat-box { height: 320px; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; background: #f0f4f8; }
+.chat-msg { max-width: 85%; padding: 12px 15px; border-radius: 15px; font-size: 0.9rem; line-height: 1.4; }
+.bot-msg { background: white; color: #334155; align-self: flex-start; border-bottom-left-radius: 2px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.user-msg { background: #38bdf8; color: #0f172a; align-self: flex-end; border-bottom-right-radius: 2px; font-weight: 500; }
+
+.chat-input-area { display: flex; padding: 15px; background: white; border-top: 1px solid #e2e8f0; }
+.chat-input-area input { flex: 1; padding: 10px 15px; border: 1px solid #cbd5e1; border-radius: 20px; outline: none; font-family: 'Poppins', sans-serif; }
+.chat-input-area button { background: #0f172a; color: white; border: none; padding: 8px 18px; margin-left: 10px; border-radius: 20px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+.chat-input-area button:hover { background: #0284c7; }
+
+/* --- Project Filter Buttons --- */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 8px 25px;
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #0f172a;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* හැංගෙන Projects වලට */
+.project-card.hide {
+    display: none;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Projects | Nisansala</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">NISANSALA.</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="projects.html" class="active">Software Projects</a></li>
+            <li><a href="skills.html">Resume & Skills</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="kn-docs.html">KN Docs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Software & Web Projects</h1>
+        <p>Full-stack development, desktop applications, and technical tools.</p>
+    </div>
+
+    <section>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="desktop">Desktop Apps</button>
+            <button class="filter-btn" data-filter="cli">Terminal / Scripts</button> 
+        </div>
+
+        <div class="grid">
+            
+            <div class="card project-card" data-category="web">
+                <img src="images/cv-generator.jpg" alt="CV Generator App">
+                <div class="card-content">
+                    <h3>Automated CV Generator</h3>
+                    <p>A web-based tool designed to automatically generate ATS-friendly resumes based on user input. Built focusing on clean UI and dynamic data handling.</p>
+                    <div style="margin-top: 15px;">
+                        <a href="https://github.com/NethmiNisansalaWickramarathna/Smart-CV-Automator" target="_blank" class="btn">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card project-card" data-category="web">
+                <img src="images/portfolio-preview.jpg" alt="Portfolio Website">
+                <div class="card-content">
+                    <h3>Professional Portfolio Website</h3>
+                    <p>My personal multi-page portfolio designed to showcase my IT journey. Features responsive design, project filtering, and an integrated AI chatbot assistant.</p>
+                    <div style="margin-top: 15px;">
+                        <a href="https://github.com/NethmiNisansalaWickramarathna/Myportfolio" target="_blank" class="btn">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card project-card" data-category="desktop">
+                <div style="height: 200px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #94a3b8; font-weight: bold; font-size: 1.2rem;">
+                    🚀 Coming Soon
+                </div>
+                <div class="card-content">
+                    <h3>New C# Desktop Application</h3>
+                    <p>A robust desktop solution currently under development using C#. Focused on administrative efficiency and data management. Stay tuned!</p>
+                </div>
+            </div>
+
+            <div class="card project-card" data-category="cli">
+                <img src="images/med-bot.jpg" alt="Medical Bot CLI">
+                <div class="card-content">
+                    <h3>Terminal Med Bot</h3>
+                    <p>An interactive medical assistant bot running directly in the VS Code terminal. Built to process text inputs and return automated responses.</p>
+                    <div style="margin-top: 15px;">
+                        <a href="https://github.com/NethmiNisansalaWickramarathna/Med-Bot-Python" target="_blank" class="btn">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card project-card" data-category="cli">
+                <img src="images/cv-script.jpg" alt="CV PDF Creator Script">
+                <div class="card-content">
+                    <h3>Code-to-PDF CV Creator</h3>
+                    <p>A backend script designed to take text data inputs within the code editor and automatically generate a beautifully formatted CV as a PDF file.</p>
+                    <div style="margin-top: 15px;">
+                        <a href="https://github.com/NethmiNisansalaWickramarathna/CV-Generator-Python" target="_blank" class="btn">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">NISANSALA<span>.</span></div>
+                <p>Dedicated Unity Game Developer, Full-Stack Enthusiast, and IT Undergraduate transitioning into the tech landscape.</p>
+                <div class="footer-socials">
+                    <a href="www.linkedin.com/in/n-wickramarathna2004" target="_blank" title="LinkedIn">💼</a>
+                    <a href="github.com/NethmiNisansalaWickramarathna" target="_blank" title="GitHub">💻</a>
+                    <a href="tel:+94704459465" title="Call">📞</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="projects.html">Software Projects</a></li>
+                    <li><a href="skills.html">Resume & Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Location</h3>
+                <ul>
+                    <li style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="color: #38bdf8; margin-right: 10px; font-size: 1.2rem;">📍</span> Pallebedda, Ratnapura
+                    </li>
+                    <li style="display: flex; align-items: center;">
+                        <span style="color: #38bdf8; margin-right: 10px; font-size: 1.2rem;">📧</span> nethminisansala774@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 G.W.N.Nisansala Wickramarathna. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="chatbot.js"></script>
+
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.classList.remove('hide');
+                    } else {
+                        card.classList.add('hide');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
