@@ -30,6 +30,6 @@ Right-click on index.html and select Open with Live Server to view the website i
 📫 Connect with Me
 Live Website: https://nethminisansalawickramarathna.github.io/Myportfolio/
 
-LinkedIn: https://github.com/NethmiNisansalaWickramarathna
+LinkedIn: https://www.linkedin.com/in/n-wickramarathna2004
 
 Designed and developed by G.W.N. Nisansala Wickramarathna.
