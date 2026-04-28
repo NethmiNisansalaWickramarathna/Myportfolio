@@ -57,13 +57,15 @@ section { padding: 40px 10%; max-width: 1400px; margin: 0 auto; }
         margin: 0 !important;
     }
 
-    /* කොටුව ෆෝන් එකේ තිරයට හරියටම මැදින් තැබීම (Ultimate Center Fix) */
+    /* කොටුව ෆෝන් එකේ තිරයට හරියටම මැදින් තැබීම සහ අර ලස්සන Box හැඩය නැවත ගෙන ඒම */
     .contact-item {
         display: block !important;
         width: 90% !important; 
         max-width: 380px !important; 
-        margin: 0 auto 20px auto !important; /* මේකෙන් තමයි වම්/දකුණු ඉඩ සමාන කරලා හරියටම මැදට ගන්නේ */
+        margin: 0 auto 25px auto !important; 
         box-sizing: border-box !important;
+        padding: 30px 20px !important; /* මේකෙන් තමයි අර නැතිවුණු Box එකේ ඇතුළේ ඉඩ නැවත එන්නේ */
+        border-radius: 12px !important; /* කොටුවේ මුළුන් රවුම් කිරීම */
     }
 
 /* --- New Professional Footer --- */
